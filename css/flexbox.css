@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul{
+	width: 100%;
+	background: black;
+	padding: 20px;
+}
+
+li{
+	display: inline-block;
+	color: white;
+}
+
+li a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.dados{
+	float: right;
+}
+
+#sec{
+	width: 100%;
+	text-align: center;
+}
+.containerA {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1500px;
+}
+.containerA > section {
+	flex: 1 1 270px;
+	margin: 10px;
+}
+
+.container img{
+	width: 600px;
+	max-width: 100%;
+	display: block;
+}
+
+.containerB {
+	text-align: center;
+	color: gray;
+}
+
+@media only screen and (max-width: 550px) {
+#logo{
+	color: white;
+}
+
+ul {
+	height: 150px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 5px;
+	
+}
+ul a{
+	margin: 2px;
+}
+
+
+li {
+	background: gray;
+}
+
+}
