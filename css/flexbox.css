@@ -1,25 +1,31 @@
 @charset "utf-8";
 /* CSS Document */
-
-ul{
-	width: 100%;
-	background: black;
-	padding: 20px;
+#sec, .dados, #logo{
+	font-family: Andale Mono, monospace;;
+}
+ul {
+	display: flex;
+	list-style: none;
 }
 
-li{
-	display: inline-block;
-	color: white;
-}
-
-li a{
-	color: white;
-	text-decoration: none;
+#logo{
 	padding: 10px;
 }
 
-.dados{
-	float: right;
+header{
+	display: flex;
+	justify-content: space-between;
+    width: 100%;
+	align-items: center;
+	background-color: black;
+}
+header a{
+	color: white;
+	text-decoration: none;
+}
+
+li a{
+	padding: 5px;
 }
 
 #sec{
@@ -50,6 +56,7 @@ li a{
 @media only screen and (max-width: 550px) {
 #logo{
 	color: white;
+	font-size: 50px;
 }
 
 ul {
@@ -59,15 +66,16 @@ ul {
 	justify-content: space-between;
 	flex-direction: column;
 	padding: 5px;
-	
+	margin-right: 22px;
 }
 ul a{
 	margin: 2px;
 }
 
-
 li {
 	background: gray;
+	display: inline;
+	width: 85px;
+	text-align: center;
 }
-
 }
